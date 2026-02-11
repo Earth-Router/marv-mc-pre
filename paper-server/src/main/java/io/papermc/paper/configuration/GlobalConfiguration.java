@@ -329,11 +329,11 @@ public class GlobalConfiguration extends ConfigurationPart {
                 executor.setMaximumPoolSize(_chatExecutorMaxSize);
             }
         }
-        public int maxJoinsPerTick = 5;
+        public int maxJoinsPerTick = 100; // Marv-MC - Handle join bursts for 2000 players
         public boolean sendFullPosForItemEntities = false;
         public boolean loadPermissionsYmlBeforePlugins = true;
         @Constraints.Min(4)
-        public int regionFileCacheSize = 256;
+        public int regionFileCacheSize = 1024; // Marv-MC - Increase cache for many players spread across worlds
         @Comment("See https://luckformula.emc.gs")
         public boolean useAlternativeLuckFormula = false;
         public boolean useDimensionTypeForCustomSpawners = false;

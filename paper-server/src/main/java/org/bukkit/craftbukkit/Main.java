@@ -78,6 +78,7 @@ public class Main {
                 this.acceptsAll(asList("s", "size", "max-players"), "Maximum amount of players")
                         .withRequiredArg()
                         .ofType(Integer.class)
+                        .defaultsTo(2000) // Marv-MC - Default to 2000 players
                         .describedAs("Server size");
 
                 this.acceptsAll(asList("d", "date-format"), "Format of the date to display in the console (for log entries)")
