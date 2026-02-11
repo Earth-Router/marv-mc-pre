@@ -502,7 +502,7 @@ public class WorldConfiguration extends ConfigurationPart {
 
     public class Chunks extends ConfigurationPart {
         public AutosavePeriod autoSaveInterval = AutosavePeriod.def();
-        public int maxAutoSaveChunksPerTick = 24;
+        public int maxAutoSaveChunksPerTick = 48; // Marv-MC - increase auto save rate for high player count
         public int fixedChunkInhabitedTime = -1;
         public boolean preventMovingIntoUnloadedChunks = false;
         public Duration delayChunkUnloadsBy = Duration.of("10s");
